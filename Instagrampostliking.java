@@ -35,8 +35,8 @@ public class Instagrampostliking {
             driver.manage().window().maximize();
             try{
                   Thread.sleep(1000);
-                  driver.findElement(By.name("username")).sendKeys(Credentials.getInstaUser());
-                  driver.findElement(By.name("password")).sendKeys(Credentials.getInstaPwd());
+                  driver.findElement(By.name("username")).sendKeys(Credentials.getInstaUser());// Enter your username instead of Credentials.getInstaUser()
+                  driver.findElement(By.name("password")).sendKeys(Credentials.getInstaPwd());// Enter your password instead of Credentials.getInstaPwd()
                   Thread.sleep(1000);
 
                   driver.findElement(By.xpath("//button[@type='submit']")).click();
